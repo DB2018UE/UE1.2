@@ -22,6 +22,7 @@ public class DMP_generator_servlet extends HttpServlet {
 	 * @see Servlet#init(ServletConfig)
 	 */
 	public void init(ServletConfig config) throws ServletException {
+		super.init(config);
 		// TODO Auto-generated method stub
 	}
 
