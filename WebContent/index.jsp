@@ -9,24 +9,14 @@
 <body>
 <h1>DMP-Generator for finished projects</h1>
 Enter your name or your ORCID-ID:<p/>
-<form
-  action="DMP_generator_servlet"
-  method="post">
-  
-	<input type="text" name="ORCID_name" value="your name" size=50% maxlength=255><p/>
-	<input type="text" name="ORCID_ID" value="your ORCID ID" size=50% maxlength=255><p/>
-
-<input type="submit" value="look up my data">
-</form>
-
 <form action="DMP_generator_servlet" method="post">
                     <fieldset>
-                        <legend id="logindata">Login</legend>
-                        <label for="username">Benutzername:</label>
-                        <input name="username" id="username" type="text" required="required"/>
-                        <label for="password">Passwort:</label>
-                        <input name="password" id="password" type="password" required="required"/>
-                        <input name="login" id="loginsubmit" class="greenlink formlink clickable" type="submit" value="Anmelden"/>
+                        <legend id="logindata">get my data</legend>
+                        <label for="username">name:</label><p/>
+                        <input name="ORCIDname" id="ORCIDname" type="text" size=50% value="your name"/><p/>
+                        <label for="password">ORCID ID:</label><p/>
+                        <input name="ORCIDID" id="ORCIDID" type="text"size=50% value="your ORCID ID"/><p/>
+                        <input name="login" id="loginsubmit" class="greenlink formlink clickable" type="submit" value="look up data"/>
                     </fieldset>
                     </form>
 </body>

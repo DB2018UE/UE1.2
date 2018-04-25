@@ -9,4 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+  	<servlet-name>DMP_generator_servlet</servlet-name>
+  	<servlet-class>ue1.servlet.DMP_generator_servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DMP_generator_servlet</servlet-name>
+  	<url-pattern>/DMP_generator_servlet</url-pattern>
+  </servlet-mapping>
 </web-app>
