@@ -4,9 +4,30 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>DMP-Generator</title>
 </head>
 <body>
-<h1>hello world</h1>
+<h1>DMP-Generator for finished projects</h1>
+Enter your name or your ORCID-ID:<p/>
+<form
+  action="DMP_generator_servlet"
+  method="post">
+  
+	<input type="text" name="ORCID_name" value="your name" size=50% maxlength=255><p/>
+	<input type="text" name="ORCID_ID" value="your ORCID ID" size=50% maxlength=255><p/>
+
+<input type="submit" value="look up my data">
+</form>
+
+<form action="DMP_generator_servlet" method="post">
+                    <fieldset>
+                        <legend id="logindata">Login</legend>
+                        <label for="username">Benutzername:</label>
+                        <input name="username" id="username" type="text" required="required"/>
+                        <label for="password">Passwort:</label>
+                        <input name="password" id="password" type="password" required="required"/>
+                        <input name="login" id="loginsubmit" class="greenlink formlink clickable" type="submit" value="Anmelden"/>
+                    </fieldset>
+                    </form>
 </body>
 </html>
