@@ -21,7 +21,7 @@ There was more than one project found on your account. For which project would y
 		<label for="projects">projects:</label><p/>
 		 <select name="projects">
 		 <% for (int i=0; i < projectData.getNumberOfProjects(); i++) {
-               Project prj = projectData.get(i);%>
+               Project prj = projects.get(i);%>
                <option name="project_<%= prj.getName() %>" id="answer_<%= prj.getName() %>" value="<%= prj.getName() %>""><%= prj.getName() %></option>
                <% }%>
   			<option value="volvo">Volvo</option>
